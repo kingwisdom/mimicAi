@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import model from "../lib/gemini";
 import Markdown from "react-markdown";
-import NewPrompt from '../components/NewPrompt';
 
 const ChatPage = () => {
     const location = useLocation()
