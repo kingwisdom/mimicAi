@@ -33,6 +33,13 @@
     display: block;
 }
 
+.markdown-container strong {
+    display: block;
+    font-weight: bold;
+    margin: 0.5em 0;
+    /* Optional: Add some margin for spacing */
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .markdown-container {
@@ -41,6 +48,11 @@
 
     .markdown-container strong li {
         display: block;
+    }
+
+    .markdown-container p,
+    .markdown-container li {
+        font-size: 0.875em;
     }
 
     .markdown-container h2 {
