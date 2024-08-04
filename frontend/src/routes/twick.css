@@ -1,0 +1,57 @@
+/* Ensure the markdown container is responsive */
+.markdown-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for subheadings */
+.markdown-container h2 {
+    font-size: 1.75em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.markdown-container h3 {
+    font-size: 1.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+/* General typography */
+.markdown-container p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Bold text */
+.markdown-container strong {
+    font-weight: bold;
+}
+
+.markdown-container strong li {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .markdown-container {
+        padding: 10px;
+    }
+
+    .markdown-container strong li {
+        display: block;
+    }
+
+    .markdown-container h2 {
+        font-size: 1.5em;
+    }
+
+    .markdown-container h3 {
+        font-size: 1.25em;
+    }
+
+    .markdown-container p {
+        font-size: 0.875em;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import model from "../lib/gemini";
 import Markdown from "react-markdown";
+import './twick.css'
 
 const ChatPage = () => {
     const location = useLocation()
@@ -187,7 +188,11 @@ const ChatPage = () => {
                                     <div className="media-content">
                                         <div className='card card-body bg-outline-secondary'>
                                             <h6 className="name" style={{ color: 'orange' }}>MimicAI</h6>
-                                            <div className="last-msg" style={{}}><Markdown>{item?.answer}</Markdown></div>
+                                            <div className="last-msg">
+                                                <div className="markdown-container">
+                                                    <Markdown>{item?.answer}</Markdown>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
